@@ -18,13 +18,13 @@ unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
    platform='linux'
 elif [[ "$unamestr" == 'Darwin' ]]; then
-   platform='Darwin'
+   platform='darwin'
 fi
 
 if [[ $platform == 'linux' ]]; then
    # Disable audible bell!
    setterm -blength 0
    alias ls='ls --color=auto'
-elif [[ $platform == 'Darwin' ]]; then
+elif [[ $platform == 'darwin' ]]; then
    alias ls='ls -G'
 fi
